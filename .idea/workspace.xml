@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dce43c17-e6d0-42df-847a-f4be64e46009" name="Default Changelist" comment="" />
+    <list default="true" id="dce43c17-e6d0-42df-847a-f4be64e46009" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/tasks/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="22" selection-end-line="102" selection-end-column="13" />
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -78,6 +80,9 @@
       <replace>href=&quot;{{ asset('$1'); }}&quot;</replace>
       <replace>src=&quot;{{ asset('home$1') }}&quot;</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -121,7 +126,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_05_07_114026_create_answers_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Answer.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" />
-        <option value="$PROJECT_DIR$/resources/views/tasks/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Groups.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SubjectsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/GroupsController.php" />
@@ -133,6 +137,7 @@
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/users.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/tasks/create.blade.php" />
       </list>
     </option>
   </component>
@@ -226,51 +231,18 @@
     <option name="width" value="1299" />
     <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="diplom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -330,16 +302,15 @@
       <workItem from="1558423884828" duration="16865000" />
       <workItem from="1558509112726" duration="7237000" />
       <workItem from="1558520401258" duration="9770000" />
-      <workItem from="1558604464031" duration="12901000" />
+      <workItem from="1558604464031" duration="13550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169006000" />
+    <option name="totallyTimeSpent" value="169655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1819633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -743,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/tasks/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="22" selection-end-line="102" selection-end-column="13" />
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
