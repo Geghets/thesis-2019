@@ -11,7 +11,9 @@ class TasksController extends Controller
 {
     public function show()
     {
-        return view('tasks.index');
+        $tasks = Task::all();
+/*        dd($tasks);*/
+        return view('tasks.index', compact("tasks"));
     }
 
     public function create()
@@ -26,7 +28,7 @@ class TasksController extends Controller
     public function store(Request $request)
     {
 //        dd($request->all());
-        $subject = Subject::where('id', $request->subject_id)->first();
+        $subject = Subject::find('id', $request->subject_id);
         $task = new Task();
         $task->question = $request->task;
         $task->subject()->associate($subject);

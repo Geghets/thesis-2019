@@ -14,8 +14,6 @@
         <div class="jumbotron">
             <table id="example" class="display" style="width:100%">
 
-
-
                 <thead>
                 <tr>
                     <th>Number</th>
