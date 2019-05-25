@@ -10,28 +10,31 @@
     </style>        <div class="container">
         <div class="jumbotron">
             <table id="example" class="display" style="width:100%">
-                <h1>{{$group->title}}</h1>
+                <h1>{{$user->name}}</h1>
 
 
                 <thead>
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Surname</th>
-                    <th>Email</th>
+                    <th>Result</th>
+                    <th>Created at</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($users as $user)
+                @php
+
+                $count = 0;
+
+                @endphp
+                @foreach($user->userAnswers as $userAnswers)
                     <tr>
-                        <td>{{ $user->id }}</td>
+                        <td>{{ ++$count }}</td>
                         <td>
-                            <a href="{{ url('users/'. $user->id) }}">
-                                {{$user->name }}
-                            </a>
+                            {{ $userAnswers->answers }}
                         </td>
-                        <td>{{$user->surname }}</td>
-                        <td>{{$user->email }}</td>
+                        <td>{{$userAnswers->result }}</td>
+                        <td>{{$userAnswers->created_at }}</td>
                     </tr>
                 @endforeach
 

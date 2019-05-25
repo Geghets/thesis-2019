@@ -10,6 +10,6 @@ class GroupsController extends Controller
     public function show()
     {
         $groups = Groups::all();
-        return view('.home', compact('groups'));
+        return view('home', compact('groups'));
     }
 }

@@ -34,6 +34,7 @@ class HomeController extends Controller
         $groups = Groups::all();
         return view('home.home', compact("groups"));
     }
+
     public function groups(Groups $id)
     {
         $group_id = $id->id;
@@ -42,8 +43,22 @@ class HomeController extends Controller
             ->with('users',$users)
             ->with('group',$id);
     }
+
     public function users(Users $id)
     {
+
+    }
+
+    public function userInfo(User $user)
+    {
+        $userId = $user->id;
+
+        $user = $user->load('userAnswers', 'userAnswers.question');
+
+//        dd($user->userAnswers);
+
+        return view('home.user-info')
+            ->with('user',$user);
 
     }
 }

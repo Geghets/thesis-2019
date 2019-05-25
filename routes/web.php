@@ -34,4 +34,7 @@ Route::get('/workspace', 'HomeController@show')->name('workspace')->middleware('
 Route::get('/workspace/{id}', 'HomeController@groups')->middleware('auth');
 Route::get('/workspace/user/id', 'HomeController@groups')->middleware('auth');
 
+
+Route::get('/users/{user}', 'HomeController@userInfo')->middleware('auth');
+
 Auth::routes();
