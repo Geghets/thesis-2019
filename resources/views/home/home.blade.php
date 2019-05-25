@@ -18,6 +18,7 @@
                 <tr>
                     <th>Number</th>
                     <th>Title</th>
+                    <th>All users result</th>
                     <th>Created</th>
                 </tr>
                 </thead>
@@ -29,8 +30,8 @@
                     <tr>
                         <td>{{ $a++ }}</td>
                         <td><a href="{{ url('/workspace/'.$group->id) }}">{{$group->title }}</a></td>
+                        <td>12</td>
                         <td>{{ $group->created_at }}</td>
-
                     </tr>
                 @endforeach
 

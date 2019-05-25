@@ -10,6 +10,8 @@ class Answer extends Model {
         'result' => 'boolean'
     ];
 
+    protected $guarded = ['*'];
+
     public function question()
     {
         return $this->belongsTo(Task::class);

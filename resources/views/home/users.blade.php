@@ -22,9 +22,12 @@
                 </tr>
                 </thead>
                 <tbody>
+                @php
+                    $count = 0;
+                @endphp
                 @foreach($users as $user)
                     <tr>
-                        <td>{{ $user->id }}</td>
+                        <td>{{ ++$count }}</td>
                         <td>
                             <a href="{{ url('users/'. $user->id) }}">
                                 {{$user->name }}

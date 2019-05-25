@@ -14,6 +14,16 @@
         </select>
     </div>
 
+        <div class="form-group">
+            <label for="subject_id">Group</label>
+            <select name="group_id" id="group_id" class="form-control">
+                <option>Select group</option>
+                @foreach($groups as $group)
+                    <option value="{{ $group->id }}">{{ $group->title }}</option>
+                @endforeach
+            </select>
+        </div>
+
     <div class="form-group">
         <label for="task">Task</label>
         <input type="text" class="form-control" name="task" required>

@@ -3,34 +3,38 @@
 namespace App\Http\Controllers;
 
 use App\Models\Answer;
+use App\Models\Groups;
 use App\Models\Subject;
 use App\Models\Task;
+use App\UserTask;
 use Illuminate\Http\Request;
 
 class TasksController extends Controller
 {
     public function show()
     {
-        $tasks = Task::all();
-/*        dd($tasks);*/
+        $tasks = Task::all()->load('group','taskSent');
         return view('tasks.index', compact("tasks"));
     }
 
     public function create()
     {
         $subjects = Subject::all();
+        $groups = Groups::all();
 
         return view('tasks.create')->with([
-            'subjects' => $subjects
+            'subjects' => $subjects,
+            'groups' => $groups
         ]);
     }
 
     public function store(Request $request)
     {
-//        dd($request->all());
-        $subject = Subject::find('id', $request->subject_id);
+        $subject = Subject::find((int)$request->subject_id);
+
         $task = new Task();
         $task->question = $request->task;
+        $task->group_id = $request->group_id;
         $task->subject()->associate($subject);
         $task->save();
 
@@ -44,7 +48,22 @@ class TasksController extends Controller
             $answerObj->save();
         }
 
+        return redirect()->back();
+    }
 
-        dd($request->all());
+    public function sendTask(Task $task)
+    {
+
+        $groupUsers = $task->group->users;
+
+        $groupUsers->map(function($user) use ($task) {
+            UserTask::insert([
+                'user_id' => $user->id,
+                'question_id' => $task->id
+            ]);
+        });
+
+        return redirect()->back();
+
     }
 }

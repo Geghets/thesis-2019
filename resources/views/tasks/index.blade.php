@@ -7,13 +7,11 @@
         <div class="jumbotron">
 
             <table id="example" class="display" style="width:100%">
-
-
-
                 <thead>
                 <tr>
                     <th>Id</th>
                     <th>Question</th>
+                    <th>Group</th>
                     <th>Created At</th>
                     <th>Send</th>
                 </tr>
@@ -26,7 +24,16 @@
                     <tr>
                         <td>{{ $a++ }}</td>
                         <td>{{$task->question }}</td>
+                        <td>{{$task->group->title }}</td>
                         <td>{{$task->created_at }}</td>
+                        <th>
+                            @if(count($task->taskSent))
+                            <span style="color:green;">Done</span>
+                            @else
+                            <a href="{{ url('/send-task/'.$task->id) }}">Send</a>
+                            @endif
+
+                        </th>
                     </tr>
                 @endforeach
 
