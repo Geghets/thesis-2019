@@ -7,7 +7,8 @@
             border: 1px solid #979797;
             background-color: white;
         }
-    </style>        <div class="container">
+    </style>
+    <div class="container">
             <div class="jumbotron">
 
                 <table id="example" class="display" style="width:100%">
@@ -18,6 +19,7 @@
                     <tr>
                         <th>Id</th>
                         <th>Title</th>
+                        <th>Created At</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -25,6 +27,7 @@
                     <tr>
                         <td>{{ $subject->id }}</td>
                         <td>{{$subject->title }}</td>
+                        <td>{{$subject->created_at }}</td>
                     </tr>
                     @endforeach
 
