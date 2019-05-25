@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <style>
         .paginate_button{
             padding: 10px;
@@ -31,9 +32,15 @@
                     <tr>
                         <td>{{ ++$count }}</td>
                         <td>
-                            {{ $userAnswers->answers }}
+                            {{ $userAnswers->question->question }}
                         </td>
-                        <td>{{$userAnswers->result }}</td>
+                        <td>
+                            @if($userAnswers->result)
+                                <i class="fas fa-check"></i>
+                            @else
+                                <i class="fas fa-minus"></i>
+                            @endif
+
                         <td>{{$userAnswers->created_at }}</td>
                     </tr>
                 @endforeach

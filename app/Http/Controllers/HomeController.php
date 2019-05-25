@@ -55,7 +55,7 @@ class HomeController extends Controller
 
         $user = $user->load('userAnswers', 'userAnswers.question');
 
-//        dd($user->userAnswers);
+//        dd($user->userAnswers[0]->question);
 
         return view('home.user-info')
             ->with('user',$user);
