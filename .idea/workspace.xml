@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce43c17-e6d0-42df-847a-f4be64e46009" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Subject.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Subject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/subjects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/subjects.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/tasks/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="21" column="2" selection-end-line="36" selection-end-column="15" />
+            <state relative-caret-position="418">
+              <caret line="31" lean-forward="true" selection-end-line="37" selection-end-column="15" />
               <folding>
                 <element signature="e#240#258#0#HTML" expanded="true" />
               </folding>
@@ -404,12 +399,12 @@
       <workItem from="1558520401258" duration="9770000" />
       <workItem from="1558604464031" duration="14394000" />
       <workItem from="1558762213996" duration="1910000" />
-      <workItem from="1558765580826" duration="4567000" />
+      <workItem from="1558765580826" duration="5707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177051000" />
+    <option name="totallyTimeSpent" value="178191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -773,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/tasks/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="21" column="2" selection-end-line="36" selection-end-column="15" />
+        <state relative-caret-position="418">
+          <caret line="31" lean-forward="true" selection-end-line="37" selection-end-column="15" />
           <folding>
             <element signature="e#240#258#0#HTML" expanded="true" />
           </folding>

@@ -15,6 +15,7 @@
                     <th>Id</th>
                     <th>Question</th>
                     <th>Created At</th>
+                    <th>Send</th>
                 </tr>
                 </thead>
                 <tbody>
